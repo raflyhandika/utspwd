@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">RD</div>
+        <h1>Kontak</h1>
+      </div>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="faq.html" target="_blank">FAQ</a>
+      </nav>
+
+      <!-- Tombol Toggle Dark Mode -->
+      <div class="toggle-container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Ganti Tema">
+          <span class="icon">🌙</span>
+        </button>
+      </div>
+    </header>
+  <main>
+    <section id="kontak" class="contact">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <p>Jika Anda memiliki pertanyaan, saran, atau ingin melakukan pemesanan khusus, silakan isi formulir berikut atau hubungi kami melalui kontak yang tersedia.</p>
+
+      <div class="contact-container">
+        <!-- Formulir Kontak -->
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Nama Anda" required />
+          <input type="email" id="email" placeholder="Email Anda" required />
+          <textarea id="message" placeholder="Pesan Anda..." rows="5" required></textarea>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+
+        <!-- Informasi Kontak -->
+        <div class="contact-info">
+          <h3>Informasi Kontak</h3>
+          <p>📍 Jl. Mawar No. 25, Salatiga, Jawa Tengah</p>
+          <p>📞 0812-3456-7890</p>
+          <p>📧 rumahkuedika@gmail.com</p>
+
+          <div class="social-links">
+            <a href="#" target="_blank">Instagram</a> | 
+            <a href="#" target="_blank">Facebook</a> | 
+            <a href="#" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© A12.2024.07183 Muhammad Rafly Setyo Handika</p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Pesan berhasil dikirim!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

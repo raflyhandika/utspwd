@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Roti Rumah Kue Dika</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">RD</div>
+        <h1>Rumah Kue Dika</h1>
+      </div>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="tentang.html" target="_blank">Tentang</a>
+        <a href="kontak.html" target="_blank">Kontak</a>
+        <a href="faq.html" target="_blank">FAQ</a>
+      </nav>
+
+      <!-- Tombol Toggle Dark Mode -->
+      <div class="toggle-container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Ganti Tema">
+          <span class="icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="card">
+        <h2 class="title">Welcome</h2>
+        <p class="lead">
+          Selamat Datang di Rumah Kue Dika, tempat di mana setiap potongan kue dibuat dengan cinta dan bahan pilihan terbaik. Nikmati rasa manis yang lembut, aroma menggoda, dan tampilan yang menggugah selera.
+        </p>
+        <button class="btn" id="showToast">Slogan</button>
+      </div>
+
+      <div class="card">
+        <h3 class="title">Pesan Sekarang</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Nama" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+          <button type="submit" class="btn secondary">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Fitur -->
+    <section class="features">
+      <div class="feature">
+        <h4>Pemesanan Online</h4>
+        <p class="muted">Pelanggan dapat memesan berbagai jenis kue langsung melalui website atau aplikasi dengan sistem pembayaran yang aman dan praktis</p>
+      </div>
+      <div class="feature">
+        <h4>Custom Kue</h4>
+        <p class="muted">Menyediakan layanan pembuatan kue sesuai permintaan mulai dari desain, ukuran, hingga rasa.</p>
+      </div>
+      <div class="feature">
+        <h4>Pengantaran Cepat dan Aman</h4>
+        <p class="muted">Layanan antar kue langsung ke lokasi pelanggan dengan kemasan khusus agar kue tetap eksklusif selama perjalanan.</p>
+      </div>
+    </section>
+
+    <!-- Etalase Produk -->
+<section class="products">
+  <h2 class="section-title">Roti Kami</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="asset/Pisang Bolen.jpg" alt="Kue Pisang Bolen" />
+      <h3>Kue Pisang Bolen</h3>
+      <p class="price">Rp 25.000</p>
+      <button class="btn buy-btn">Beli Sekarang</button>
+    </div>
+    <div class="product-card">
+      <img src="asset/Kue Tart.jpg" alt="Kue Tart" />
+      <h3>Kue Tart Ulang Tahun</h3>
+      <p class="price">Rp 30.000</p>
+      <button class="btn buy-btn">Beli Sekarang</button>
+    </div>
+    <div class="product-card">
+      <img src="asset/Kue Kering.png" alt="Kue Kering" />
+      <h3>Kue Kering</h3>
+      <p class="price">Rp 28.000</p>
+      <button class="btn buy-btn">Beli Sekarang</button>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© A12.2024.07183 Muhammad Rafly Setyo Handika</p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Pesan berhasil dikirim!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
